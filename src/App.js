@@ -11,12 +11,15 @@ import "./App.css";
 
 //adding paths i would like to my app to go to.
 //home, cart, list, login, products
-const App = () => {
-  return (
-    <div className="app-container">
-      <Routes>
-        <Route exact path="/" element={<Navigate to={PATHS.PRODUCT_LIST} />} />
 
+const App = () => {
+   return (
+     <div className="app-container">
+       <Routes>
+
+         <Route exact path="/" element={<Navigate to={PATHS.PRODUCT_LIST} />} />
+
+        
         <Route path="/" element={<PrivateRoutes />}>
           <Route path={PATHS.PRODUCT_LIST} element={<ProductList />} />
           <Route path={PATHS.PRODUCT_DETAIL} element={<ProductDetail />} />
