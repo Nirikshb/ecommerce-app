@@ -29,7 +29,7 @@ export const INITIAL_STATE = {
       price: "INR 5,990",
       availableQuantity: 0,
       imgSrc:
-        "https://www.reliancedigital.in/medias/Sony-CFI-ZCT1WRU-Gaming-Accessories-491936182-i-1-1200Wx1200H?context=bWFzdGVyfGltYWdlc3wxMzY3NDV8aW1hZ2UvanBlZ3xpbWFnZXMvaDBkL2hjNi85NDU0MDEyOTg5NDcwLmpwZ3wzZjZiYmQ1ZTM2Mjk1N2MyNTU4ZDhhMmRhODc4MjIyMzJjZGYyMTBkMzU3YTdmMTFkYmQzZWFkMGMwYWFjNjM0",
+        "https://www.reliancedigital.in/medias/Sony-CFI-ZCT1WRU-Gaming-Accessories-491936182-i-1-1200Wx1200H?context=bWFzdGVyfGltYWdlc3wxMzY3NDV8aW1hZ2UvanBlZ3xpbWFnZXMvaGJhL2g3YS85NDU0MDEyOTg5NDcwLmpwZ3wzZjZiYmQ1ZTM2Mjk1N2MyNTU4ZDhhMmRhODc4MjIyMzJjZGYyMTBkMzU3YTdmMTFkYmQzZWFkMGMwYWFjNjM0",
       desc: {
         warranty: "",
         keyFeatures: [
@@ -91,8 +91,55 @@ export const INITIAL_STATE = {
         ],
       },
     },
+    {
+      id: "ADKF2HOLB",
+      name: "Samsung Galaxy S21 Ultra 5G",
+      price: "INR 99,999",
+      availableQuantity: 3,
+      imgSrc: "https://example.com/samsung-galaxy-s21-ultra.jpg",
+      desc: {
+        warranty: "2 Year manufacturer warranty",
+        keyFeatures: [
+          "6.8-inch Quad HD+ AMOLED Display",
+          "Exynos 2100/Snapdragon 888 Processor",
+          "108 MP + 10 MP + 10 MP + 12 MP Quad Rear Cameras",
+          "5,000 mAh Battery with 25W Fast Charging",
+        ],
+      },
+    },
+    {
+      id: "ADKF2FOLC",
+      name: "Sony WH-1000XM4 Wireless Noise Cancelling Headphones",
+      price: "INR 27,990",
+      availableQuantity: 3,
+      imgSrc: "https://example.com/sony-wh-1000xm4.jpg",
+      desc: {
+        warranty: "1 Year manufacturer warranty",
+        keyFeatures: [
+          "Industry-leading Noise Cancellation",
+          "30 Hours Battery Life",
+          "Touch Controls & Voice Assistant Support",
+          "High-Resolution Audio Quality",
+        ],
+      },
+    },
+    {
+      id: "ADKF2HOLZ",
+      name: "Canon EOS M50 Mark II Mirrorless Camera",
+      price: "INR 55,999",
+      availableQuantity: 2,
+      imgSrc: "https://example.com/canon-eos-m50-mark-ii.jpg",
+      desc: {
+        warranty: "1 Year manufacturer warranty",
+        keyFeatures: [
+          "24.1 MP APS-C CMOS Sensor",
+          "DIGIC 8 Image Processor",
+          "4K UHD 24p Video and HD 120p for Slow Motion",
+          "Built-in OLED EVF with Touch and Drag AF",
+        ],
+      },
+    },
   ],
 };
 
 export const store = createStore(reducer, INITIAL_STATE, composeWithDevTools());
-//creating and hardcoding the values to be shown in ui
